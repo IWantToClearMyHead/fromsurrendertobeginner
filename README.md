@@ -11,3 +11,16 @@ book | link | mark
 --- | --- | ---
 Nethack | http://www.nethack.org/v366/downloads.html | :heart::heart::heart::heart::heart:
 Emoji | https://emojipedia.org/ | :heart::heart::heart::heart::heart:
+
+### Plan
+<!---
+* Unordered list can use asterisks
+- Or minuses
++ Or pluses
+-->
++ C
++ Problem && Solution
+
+### Copyright
+![mit][mit.svg]
+
