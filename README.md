@@ -22,5 +22,5 @@ Emoji | https://emojipedia.org/ | :heart::heart::heart::heart::heart:
 + Problem && Solution
 
 ### Copyright
-![mit][mit.svg]
+![mit][mit.svg.png]
 
