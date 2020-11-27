@@ -14,15 +14,20 @@ book | link | mark
 Nethack | http://www.nethack.org/v366/downloads.html | :heart::heart::heart::heart::heart:
 Emoji | https://emojipedia.org/ | :heart::heart:
 Emoji | https://graphemica.com/ | :heart::heart::heart::heart::heart:
-### Plan
+
+### Chapter
 <!---
 * Unordered list can use asterisks
 - Or minuses
 + Or pluses
+-------------
+C == C language
+P == Problem && Solution
 -->
-+ C
-+ Problem && Solution
++ [C](C/C.md)
++ [P](P/P.md)
+
 
 ### Copyright
-![mit](mit.svg.png "mit")
+![mit](mit.svg.png =250x "mit")
 
