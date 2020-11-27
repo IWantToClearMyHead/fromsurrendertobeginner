@@ -29,10 +29,5 @@ P == Problem && Solution
 
 
 ### Copyright
-![mit](logo "mit"){.mit}
-[logo]: (mit.svg.png)
-<style type="text/css">
-    .mit{
-        width: 200px;
-    }
-</style>
+![mit|40%](mit.svg.png "mit")
+
