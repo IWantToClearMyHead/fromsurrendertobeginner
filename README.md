@@ -29,5 +29,5 @@ P == Problem && Solution
 
 
 ### Copyright
-![mit|40%](mit.svg.png "mit")
+![mit|20%](mit.svg.png "mit")
 
