@@ -32,5 +32,5 @@ P == Problem && Solution
 <!-- 
 ![mit|36x28,20%](mit.svg.png "mit") 
 -->
-![mit]<img src="mit.svg.png" width="360" height="250">
+<img src="mit.svg.png" width="36" height="25">
 
