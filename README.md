@@ -1,4 +1,5 @@
-# C语言--从<strong>放弃</strong>到<em>入门</em>
+# C语言
+从&#129402;<strong>放弃</strong>到🥰<em>入门</em>
 
 ### Classic
 book | link | mark
@@ -10,8 +11,8 @@ taote | https://terebess.hu/english/tao/merel.html | [read](https://terebess.hu/
 book | link | mark
 --- | --- | ---
 Nethack | http://www.nethack.org/v366/downloads.html | :heart::heart::heart::heart::heart:
-Emoji | https://emojipedia.org/ | :heart::heart::heart::heart::heart:
-
+Emoji | https://emojipedia.org/ | :heart::heart:
+Emoji | https://graphemica.com/ | :heart::heart::heart::heart::heart:
 ### Plan
 <!---
 * Unordered list can use asterisks
