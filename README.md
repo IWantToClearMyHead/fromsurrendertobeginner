@@ -29,5 +29,5 @@ P == Problem && Solution
 
 
 ### Copyright
-![mit|512x397,20%](mit.svg.png "mit")
+![mit|36x28,20%](mit.svg.png "mit")
 
