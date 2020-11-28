@@ -14,6 +14,9 @@ book | link | mark
 Nethack | http://www.nethack.org/v366/downloads.html | :heart::heart::heart::heart::heart:
 Emoji | https://emojipedia.org/ | :heart::heart:
 Emoji | https://graphemica.com/ | :heart::heart::heart::heart::heart:
+Equation | https://www.codecogs.com/latex/eqneditor.php | :heart::heart::heart::heart::heart:
+
+
 
 ### Chapter
 <!---
