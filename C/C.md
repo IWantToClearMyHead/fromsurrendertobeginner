@@ -1,3 +1,5 @@
+![C](c.png)
+
 ### Contents
 1. [why give up?]
 2. [where to pick up?]
