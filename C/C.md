@@ -1,4 +1,4 @@
-![C](c.png)
+![C](../c.png)
 
 ### Contents
 1. [why give up?]
