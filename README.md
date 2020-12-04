@@ -24,12 +24,13 @@ Equation | https://www.codecogs.com/latex/eqneditor.php | :heart::heart::heart::
 - Or minuses
 + Or pluses
 -------------
-C == C language
+C == C Language
 P == Problem && Solution
+Q == Quick Step
 -->
 + [C](C/C.md)
 + [P](P/P.md)
-
++ [Q](Q/Q.md)
 
 ### Copyright
 <!-- 
