@@ -1,0 +1,154 @@
+![C](../c.png)
+
+### 关键字
+C语言一共有32个自定义关键字。
+|  1   | 2  |  3   | 4  |
+|  ----  | ----  |  ----  | ----  |
+| auto  | double | long   | switch |
+| break  | else | register | typedef |
+| case  | enum | return  | unsigned |
+| char  | extern | short  | union |
+| const  | float | signed   | void |
+| continue  | for | sizeof | volatile |
+| default  | goto | while | static | 
+| do  | if | int  | struct |
+
+<!--
+auto：声明自动变量；
+break：跳出当前循环；
+case：开关语句分支；
+char：声明字符型变量或函数返回值类型；
+const：声明只读变量；
+continue：结束当前循环，开始下一轮循环；
+default：开关语句中的“默认分支”；
+do：循环语句的循环体；
+
+double：声明双精度浮点型变量或函数返回值类型；
+else：条件语句否定分支（与if连用）；
+enum：声明枚举类型；
+extern：声明变量或函数是在其它文件或本文件的其它位置定义；
+float：声明浮点型变量或函数返回值类型；
+for：一种循环语句；
+goto：无条件跳转语句；
+if：条件语句；
+
+int：声明整型变量或函数；
+long：声明长整型变量或函数返回值类型
+register：声明寄存器变量；
+return：子程序返回语句（可以带参数，也可不带参数）
+short：声明短整型变量或函数；
+signed：声明有符号类型变量或函数；
+sizeof：计算数据类型或变量长度（即所占字节数）
+static：声明静态变量；
+
+struct：声明结构体类型；
+switch：用于开关语句；
+typedef：用以给数据类型取别名；
+unsigned：声明无符号类型变量或函数；
+union：声明共用体类型；
+void：声明函数无返回值或无参数，声明无类型指针；
+volatile：说明变量在程序执行中可被隐含地改变；
+while：循环语句的循环条件；
+
+asm：用于在C语言中嵌入汇编指令；
+fortran：为Fortran语言链接而设定的条件性支持类型指令符。
+-->
+
+### 数据类型
+|  数据  | 范围  |  精度  | 格式  |
+|  ----  | ---- |  ----  | ---- |
+| short  |      |        |      |
+| int    |      |        |      |
+| long   |      |        |      |
+| long long |   |        |      |
+| float  |      |        |      |
+| double |      |        |      |
+| long double | |        |      |
+
+### 联合体 vs 结构体
+大小不同
+字节对齐是为了cpu快速访问，对不齐最大的隐患在于强制类型转换时容易越界
+```
+int main(int argc, char* argv[])
+{
+struct A
+{
+int a;
+char b;
+short c;
+};//4 + 1 + 2 = 7
+struct B
+{
+char b;
+int a;
+short c;
+};//1 + 4 + 2 = 7
+
+printf("size of A => %d\n", sizeof(struct A));//8 
+printf("size of B => %d\n", sizeof(struct B));//12
+
+printf("GNU GCC align default align = 4 bytes\n");
+
+
+}
+```
+
+
+### typedef
+重定义一个别名
+
+### define
+宏的高级方法
+
+### volatile
+- 中断服务程序中修改的供其它程序检测的变量，需要加volatile； 
+
+当变量在触发某中断程序中修改，而编译器判断主函数里面没有修改该变量，因此可能只执行一次从内存到某寄存器的读操作，而后每次只会从该寄存器中读取变量副本，使得中断程序的操作被短路。
+- 多任务环境下各任务间共享的标志，应该加volatile； 
+
+在本次线程内, 当读取一个变量时，编译器优化时有时会先把变量读取到一个寄存器中；以后，再取变量值时，就直接从寄存器中取值；当内存变量或寄存器变量在因别的线程等而改变了值，该寄存器的值不会相应改变，从而造成应用程序读取的值和实际的变量值不一致 。
+- 存储器映射的硬件寄存器通常也要加volatile说明，因为每次对它的读写都可能由不同意义；
+
+假设要对一个设备进行初始化，此设备的某一个寄存器为0xff800000。for(i=0;i< 10;i++)  *output = i;前面循环半天都是废话，对最后的结果毫无影响，因为最终只是将output这个指针赋值为9，省略了对该硬件IO端口反复读的操作。
+
+😀🔚
+[CONTENT](C.md)
+
+~~~
+• Introduction and Programming Strategies
+	○ Features of C language, Broad structure of C.
+	○ Understanding C syntax, Data types, Escape sequences.
+	○ Operators, C conventions, Error Handling.
+	○ Some Programming Language Notes. 
+• Structured Programming Strategies
+	○ Decision Making and Looping
+		§ Decision Structures
+		§ Looping Structures.
+		§ Break and Continue statements.
+	○ Functions
+		§ Function prototypes, function calling, function body, Arguments, by value and by Reference, Steps Involved In invoking a function, Recursive Functions, Types of functions, Functions Returning Pointers.
+	○ Arrays, Structures and Unions
+		§ Definition of Arrays, Comparison between arrays and pointers, Single Dimension Array, Two Dimensional Arrays, Structures & Unions, Memory layout, Bit fields in structure, functions and structures
+	○ Pointers
+		§ Declaration of pointers, Rules valid for pointers, Pointer usage, Pointers, addressing, referencing and dereferencing, Passing pointers to a function, Strings with Pointers.
+	○ String IO
+		§ Accessing individual characters, Printing strings with printf, Printing strings with puts, Inputting strings with scanf, Inputting strings with gets, String Library (strcpy(), strcat(), strcmp(), strchr(), strstr(), spintf(), sscanf(), atoi()).
+	○ Memory Allocation
+		§ Overview of memory management, Allocating new heap memory, _ Deallocating heap memory, Checking for successful memory allocation, Memory errors, Using memory you don’t own, Faulty heap management.
+	○ Operation in C
+		§ Files, File naming, Opening a file, Writing and reading a file, Character input and output, Direct file input and output operations, Closing and flushing of files, Sequential and random files. 
+• Data Structures
+	○ Array and pointer:
+		§ Array creation, Array notation (pointer, direct etc), Review of pointer fundamentals, Review of Pointer operations, Parameter passing as pointers.
+	○ Sorting and searching methods
+		§ Various sorting techniques, Bubble sort, Merge sort, Quick sort, various search techniques: Sequential search, Binary search, Radix search.
+	○ Stack and queue
+		§ Stack Fundamentals, Stack implementation, Queue Fundamentals, Queue Implementation.
+	○ Linked list Fundamentals
+		§ Link list basics, Elementary link list functions.
+	○ Linked list Advanced
+		§ Reversing link list (different methods), by swapping, By recursion, Doubly link list, Basics of doubly link list, Circular link list.
+	○ Trees and Dynamic Algorithms:
+		§ Introduction, Binary tree, Complementary binary tree, Extended 2-Tree representation, Minimum weighted Path Length algorithm, Huffman’s Encoding, Balanced Binary Tree, and Paged Binary tree, M-Way Search Tree, Red-Black Tree, Threaded Binary Tree.
+
+~~~
